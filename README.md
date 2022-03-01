@@ -1,4 +1,4 @@
-# zapctx 
+# zapctx [![Go Reference](https://pkg.go.dev/badge/github.com/joelterry/zapctx.svg)](https://pkg.go.dev/github.com/joelterry/zapctx)
 
 Have you ever used zap.Logger.With() and thought to yourself, "all these nonessential scoped values sure make me think of the context package"? Me too. The behavior of zap.Logger.With() is so similar to that of context.WithValue() that I imagine some people opt to forgo their loggers' contextual functionality and redundantly log context values instead. Or, if one chooses to use their logger as a contextual object, they have to either store it as a context value or pass it everywhere as a second argument after the standardized context.Context.
 
